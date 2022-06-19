@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Kumbh Sans", sans-serif;
+    background-image: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+h1 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 520px;
+    width: 920px;
+    border-radius: 20px;
+}
+
+.text {
+    width: 50%;
+    padding: 30px;
+    height: auto;
+}
+
+
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.active{
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.accordion:hover {
+    color: hsl(14, 88%, 65%);
+}
+  
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+
+
+.image{
+
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+
+.img-1 {
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    margin-top: -50px;
+    z-index: 2;
+  }
+  
+.img-2 {
+    position: absolute;
+    z-index: 1;
+    margin-top: 90px;
+    margin-left: -50px;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+
+  .attribution a { 
+    color: #fff;
+    font-size: 16px; 
+}
+
+
+  @media only screen and (max-width:900px){
+        .container{
+            width: 80%;
+        }
+
+        .img-2{
+            width: 100%;
+            margin-top: 110px;
+        }
+
+        .img-1{
+            width: 30%;
+        }
+  }
+
+  @media only screen and (max-width:600px){
+
+    body,main,html,footer {
+        width: 100%;
+    }
+
+    body {
+        padding: 30px;
+    }
+
+    .container{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    .image,.text {
+        width: 100%;
+    }
+
+    .img-1{
+        width: 20%;
+        top: 50%;
+        left: 50%;
+        margin-left: -100px;
+        margin-top: -70px;
+    }
+
+    .img-2{
+        width: 60%;
+        top: 100%;
+        left: 50%;
+        margin-left: -100px;
+        margin-top: -170px;
+    }
+
+  }
+

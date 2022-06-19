@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/social-proof-section-MImiA1BYeq)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/faq-accordion-card-wn23NmF8O3)
 - Live Site URL: [Github](https://kinjames.github.io/faq-card/)
 
 ## My process
